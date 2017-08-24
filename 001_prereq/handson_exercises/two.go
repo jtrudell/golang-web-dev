@@ -30,7 +30,7 @@ func (p person) pSpeak() {
 }
 
 func (sa secretAgent) saSpeak() {
-	fmt.Println("My bade number is", sa.badgeNumber)
+	fmt.Println("My badge number is", sa.badgeNumber)
 }
 
 func main() {
