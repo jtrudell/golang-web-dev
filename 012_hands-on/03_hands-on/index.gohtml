@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{{.Name}}</title>
+  </head>
+  <body>
+  <h1>{{.Name}}</h1>
+  {{range .Hotels}}
+  <ul>
+    <li>{{.Name}}</li>
+    <li>{{.Address}}</li>
+    <li>{{.City}}</li>
+    <li>{{.Zip}}</li>
+    <li>Region: {{.Region}}</li>
+  </ul>
+  {{end}}
+  </body>
+</html>
