@@ -1,7 +1,7 @@
 package main
 
 import (
-	// "log"
+	"log"
 	"os"
 	"text/template"
 )
@@ -50,8 +50,8 @@ func main() {
 	some_hotels := []Hotel{hotel, hotel_two}
 	data := HotelList{"California Hotels", some_hotels}
 
-	tpl.ExecuteTemplate(os.Stdout, "index.gohtml", data)
-	// if err != nil {
-	// 	log.Fatlln(err)
-	// }
+	err := tpl.ExecuteTemplate(os.Stdout, "index.gohtml", data)
+	if err != nil {
+		log.Fatalln(err)
+	}
 }
